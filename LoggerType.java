@@ -1,4 +1,4 @@
 public enum LoggerType {
-    Dblogger,Filelogger,Consollogger
+    Dblogger, Filelogger, Consollogger
 
 }

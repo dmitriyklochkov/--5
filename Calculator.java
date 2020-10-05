@@ -3,20 +3,20 @@ import java.util.Scanner;
 public class Calculator extends AppFactory {
     private static double rezult;
 
-        static void multiplication(double a, double b) {
-         rezult = a * b;
+    static void multiplication(double a, double b) {
+        rezult = a * b;
     }
 
     static void division(double a, double b) {
-         rezult = a / b;
+        rezult = a / b;
     }
 
-    static void addition(double a, double b){
-     rezult = a + b;
+    static void addition(double a, double b) {
+        rezult = a + b;
     }
 
     static void subtraction(double a, double b) {
-     rezult = a - b;
+        rezult = a - b;
     }
 
     public static void main(String[] args) {

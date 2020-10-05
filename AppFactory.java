@@ -1,11 +1,11 @@
-public class AppFactory
-{
-protected static String message;
+public class AppFactory {
+    protected static String message;
+
     public static void main(String[] args) {
 
-         LoggerFactory factory = null;
-            LoggerType[] loggerType =LoggerType.values();
-        for (LoggerType type : loggerType){
+        LoggerFactory factory = null;
+        LoggerType[] loggerType = LoggerType.values();
+        for (LoggerType type : loggerType) {
             switch (type) {
                 case Dblogger:
                     factory = new DbLoggerFactory();
