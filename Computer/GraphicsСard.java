@@ -1,3 +1,5 @@
+package Computer;
+
 public class GraphicsСard {
     private String manufacturer = "ASUS";
     private String type = "Дискретная";

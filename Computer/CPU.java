@@ -1,3 +1,5 @@
+package Computer;
+
 public class CPU {
     private int frequency = 2400;
     private int core = 2;

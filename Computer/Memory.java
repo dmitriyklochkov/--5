@@ -1,3 +1,5 @@
+package Computer;
+
 public class Memory {
     private int volume = 8;
     private String type = "DDR3";

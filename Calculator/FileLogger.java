@@ -1,3 +1,5 @@
+package Calculator;
+
 public class FileLogger implements Logger {
 
     @Override

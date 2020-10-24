@@ -1,7 +1,9 @@
+package Calculator;
+
 public class AppFactory {
     protected static String message;
 
-    public static void main(String[] args) {
+    protected static void loger(String[] args) {
 
         LoggerFactory factory = null;
         LoggerType[] loggerType = LoggerType.values();

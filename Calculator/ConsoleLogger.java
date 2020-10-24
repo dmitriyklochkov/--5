@@ -1,3 +1,5 @@
+package Calculator;
+
 public class ConsoleLogger implements Logger {
 
     @Override
