@@ -1,12 +1,18 @@
 package Computer;
 
-public class Monitor {
+public class Monitor implements Component {
 
-    private String name = "Samsung";
-    private int diagonal = 19;
+    protected String name;
+    protected int diagonal;
 
-    void vklMonitor() {
-        System.out.println("монитор: " + name + " диагональ " + diagonal);
+    @Override
+    public void start() {
+        System.out.println("монитор включен");
+    }
+
+    @Override
+    public void getInfo() {
+
     }
 }
 

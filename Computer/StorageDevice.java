@@ -1,13 +1,18 @@
 package Computer;
 
-public class StorageDevice {
-    private String formFactor = "mATX";
-    private String manufacturer = "Kingston";
-    private String type = "SSD";
-    private int volume = 465;
+public class StorageDevice implements Component {
+    protected double formFactor;
+    protected String manufacturer;
+    protected String type;
+    protected int volume;
 
-    void vklStorageDevice() {
-        System.out.println("накопитель: " + " производитель " + manufacturer + " " + type + " форм фактор " + formFactor + " объем памяти " + volume + " Гб ");
+    @Override
+    public void start() {
+        System.out.println("накопитель включен");
     }
 
+    @Override
+    public void getInfo() {
+
+    }
 }

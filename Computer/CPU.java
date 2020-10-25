@@ -1,14 +1,19 @@
 package Computer;
 
-public class CPU {
-    private int frequency = 2400;
-    private int core = 2;
-    private int cash = 1;
-    private String manufacturer = "icore";
-    private String name = "Intel";
+public class CPU implements Component {
+    protected int frequency;
+    protected int core;
+    protected int cash;
+    protected String manufacturer;
+    protected String name;
 
-    void vklCPU() {
-        System.out.println("процессор: " + name + "производитель " + manufacturer + "" + frequency + " Гц тактовая частота " + core + " ядра " + cash + " Гб кеш память");
+    @Override
+    public void start() {
+        System.out.println("процессор включен");
+    }
+
+    @Override
+    public void getInfo() {
     }
 }
 

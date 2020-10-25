@@ -1,12 +1,17 @@
 package Computer;
 
-public class Memory {
-    private int volume = 8;
-    private String type = "DDR3";
-    private int frequency = 1333;
-    private String manufacturer = "Kingston";
+public class Memory implements Component {
+    protected int volume;
+    protected String type;
+    protected int frequency;
+    protected String manufacturer;
 
-    void vklMemory() {
-        System.out.println("оперативная память: " + " производитель " + manufacturer + " частота " + frequency + " Гц " + type + " " + volume + " Гб ");
+    @Override
+    public void start() {
+        System.out.println("ОЗУ включено");
+    }
+
+    @Override
+    public void getInfo() {
     }
 }

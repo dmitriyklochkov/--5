@@ -8,18 +8,23 @@ public class ComputerFacade {
     private Monitor monitor;
 
     ComputerFacade() {
-        this.cpu = new CPU();
-        this.memory = new Memory();
-        this.graphicsСard = new GraphicsСard();
-        this.storageDevice = new StorageDevice();
-        this.monitor = new Monitor();
+        this.cpu = new CPUFactory();
+        this.memory = new MemoryFactory();
+        this.graphicsСard = new GraphicsСardFactory();
+        this.storageDevice = new StorageDeviceFactory();
+        this.monitor = new MonitorFactory();
     }
 
-    void vkl() {
-        cpu.vklCPU();
-        memory.vklMemory();
-        graphicsСard.vklGraphicsCard();
-        storageDevice.vklStorageDevice();
-        monitor.vklMonitor();
+    void start() {
+        cpu.start();
+        cpu.getInfo();
+        memory.start();
+        memory.getInfo();
+        graphicsСard.start();
+        graphicsСard.getInfo();
+        storageDevice.start();
+        storageDevice.getInfo();
+        monitor.start();
+        monitor.getInfo();
     }
 }
